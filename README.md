@@ -1,4 +1,4 @@
-# GeoDiffusion_Plus_Plus
+# RLPF: Post-training Data Generation Models with Perception Feedback
 
 The dataset and pretrained GeoDiffusion model can be found at [GeoDiffusion](https://github.com/KaiChen1998/GeoDiffusion).
 
