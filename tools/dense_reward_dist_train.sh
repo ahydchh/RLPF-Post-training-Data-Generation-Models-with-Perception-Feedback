@@ -1,9 +1,9 @@
 # PY_ARGS=${@:1}
 EPOCHS=3
-NAME="nui_dense_test"  # 这里也要改！
+NAME="nui_dense_test"
 SAVE_FREQ=1000
 MODEL_PATH=geodiffusion-coco-stuff-256x256
-# 看一下gpu_id是什么
+
 accelerate launch --multi_gpu --main_process_port=$(python random_port.py) --mixed_precision fp16 --gpu_ids 0,1 --num_processes 2 \
 dense_train_geodiffusion.py \
     --pretrained_model_name_or_path ${MODEL_PATH} \

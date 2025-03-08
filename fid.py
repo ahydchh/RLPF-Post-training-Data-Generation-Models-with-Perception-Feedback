@@ -33,6 +33,5 @@ for d in tqdm(dirs):
     results[dir] = score
     with open(csv_file, mode='a', newline='') as f:
         writer = csv.writer(f)
-        # 写入一个键值对
         writer.writerow([dir, score])
 print(results)

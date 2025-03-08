@@ -155,7 +155,7 @@ with distributed_state.split_between_processes(list(range(len(dataset)))) as loc
         group_dir = os.path.join(root, f"group_{idx}")
         save_path = os.path.join(group_dir, path) 
         directory = os.path.dirname(save_path)
-        # 如果目录不存在则创建
+
         if not os.path.exists(directory):
             os.makedirs(directory)
         image.save(save_path)
